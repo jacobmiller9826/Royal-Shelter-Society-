@@ -2,57 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="theme-color" content="#111" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Royal Shelter Society</title>
+  <meta name="description" content="A new era in real estate, art, and impact.">
   <link rel="stylesheet" href="style.css" />
   <link rel="manifest" href="manifest.json" />
-  <script defer src="script.js"></script>
+  <link rel="icon" type="image/png" href="icon-192.png" />
 </head>
 <body>
   <header>
     <h1>👑 Royal Shelter Society</h1>
-    <button id="darkToggle">🌓</button>
+    <p>Real Estate • Art • Legacy • Impact</p>
+    <button id="darkToggle">Dark Mode</button>
   </header>
 
-  <section class="hero">
-    <h2>Home is a Human Right</h2>
-    <p>A 30-year mission to end homelessness using real estate, art, and fashion.</p>
-    <a class="download" href="shelter-whitepaper.pdf" target="_blank">📄 Download Whitepaper</a>
-  </section>
+  <main>
+    <section>
+      <h2>Mission</h2>
+      <p>We believe every person deserves shelter, dignity, and opportunity. Inspired by the work of <strong>Homewards</strong> and a legacy of resilience, we are reshaping housing with bold creativity and a $6B real estate portfolio.</p>
+    </section>
 
-  <section class="origin">
-    <h3>🧬 Origin Story</h3>
-    <p>I was born into royalty. Relocated to Tucson, Arizona. Raised with resilience and shaped by real estate. Now I inherit a $6B portfolio—and a mission: make homelessness rare, brief, and never repeated.</p>
-  </section>
+    <section>
+      <h2>White Paper</h2>
+      <p>Read the plan to make homelessness rare and non-repetitive, blending real estate, fashion, and community.</p>
+      <a href="shelter-whitepaper.pdf" download class="download-btn">📄 Download Whitepaper</a>
+    </section>
 
-  <section class="timeline">
-    <h3>🗓️ 30-Year Vision</h3>
-    <ul>
-      <li><strong>2025–2030:</strong> Transform trailer parks, launch fashion label, pilot in Tucson</li>
-      <li><strong>2030–2035:</strong> 10 creative housing campuses, global art/fashion collabs</li>
-      <li><strong>2035–2045:</strong> Museum of Shelter, functional zero in 25 cities</li>
-      <li><strong>2045–2055:</strong> Global codex, end chronic homelessness in 100 cities</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Style & Story</h2>
+      <p>Born into exile. Raised in the desert. Building a Royal Shelter from trailer parks to city centers — backed by street art, grit, and gold.</p>
+    </section>
 
-  <section class="fashion">
-    <h3>🎨 Art + Fashion</h3>
-    <p>Streetwear drops. Gallery shows in trailer parks. Culture that funds shelter. Coming soon.</p>
-  </section>
-
-  <section class="contact">
-    <h3>📬 Join the Movement</h3>
-    <form action="https://formspree.io/f/your-id" method="POST">
-      <input type="text" name="name" placeholder="Name" required />
-      <input type="email" name="_replyto" placeholder="Email" required />
-      <textarea name="message" placeholder="How can you help?" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+    <section>
+      <h2>Contact & Collaboration</h2>
+      <p>Want to join the mission, support the movement, or showcase art/fashion that tells this story?</p>
+      <p><a href="mailto:royalshelter@protonmail.com">📩 royalshelter@protonmail.com</a></p>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Royal Shelter Society</p>
+    <p>&copy; 2025 Royal Shelter Society. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('Service Worker Registered'));
+    }
+  </script>
 </body>
 </html>
