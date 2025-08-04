@@ -1,0 +1,133 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #111;
+  color: #f4f4f4;
+  line-height: 1.6;
+  padding: 1rem;
+}
+a {
+  color: #ffd700;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px dashed #f4f4f4;
+}
+header h1 {
+  font-size: 1.5rem;
+  color: #ffd700;
+  text-transform: uppercase;
+}
+#darkToggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background: #222;
+  border: 2px solid #ffd700;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 1.4rem;
+  color: #fff;
+}
+.hero p {
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+.download {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #ffd700;
+  color: #111;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Sections */
+section {
+  margin: 2rem 0;
+}
+h3 {
+  font-size: 1.2rem;
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+}
+ul {
+  list-style: square;
+  margin-left: 1rem;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+input, textarea {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+}
+button {
+  background: #ffd700;
+  color: #111;
+  font-weight: bold;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+button:hover {
+  background: #fff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 0.8rem;
+  border-top: 1px dashed #555;
+  margin-top: 2rem;
+}
+
+/* Dark Mode */
+body.light {
+  background-color: #fefefe;
+  color: #111;
+}
+body.light header, body.light footer {
+  border-color: #333;
+}
+body.light .hero {
+  background: #fff;
+  color: #111;
+}
+body.light #darkToggle {
+  color: #111;
+}
+body.light a {
+  color: #b22222;
+}
